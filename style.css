@@ -1,0 +1,112 @@
+/* Styles for the navigation bar */
+#navbar {
+    background-color: #2f2c29;
+    padding: 70px 0;
+    text-align: center;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styles for the banner image */
+#banner-img {
+    width: 700px;
+}
+
+/* Styles for the title icon */
+#title-icon {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Styles for the content section */
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles for the introduction, call to action, and updates sections */
+.contents {
+    margin-bottom: 30px;
+}
+
+.contents h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Styles for the buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buttons a:hover {
+    background-color: #e64a19;
+}
+
+/* Styles for the roadmap box */
+.contents .box {
+    margin-bottom: 30px;
+}
+
+.contents .box h2 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #333;
+}
+
+.contents .box ol {
+    list-style-type: none;
+    counter-reset: step;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contents .box ol li {
+    position: relative;
+    counter-increment: step;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    padding: 20px;
+    width: 300px; /* Increased box size */
+    min-height: 120px; /* Increased box size */
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.contents .box ol li:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.contents .box ol li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ff5722;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
